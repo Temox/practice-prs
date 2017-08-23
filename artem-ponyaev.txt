@@ -1,0 +1,25 @@
+1, 21 commits:
+	[temox@git zabbixapi]$ git blame Gemfile | wc -l
+	21
+
+2. 2016-10-31 13:31:23 -0500
+	[temox@git zabbixapi]$ git blame Gemfile | head -n 1
+	a6359509 (Jon Beilke      2016-10-31 13:31:23 -0500  1) source 'https://rubygems.org'
+
+3. Jon Beilke <jrbeilke@gmail.com>
+	[temox@git zabbixapi]$ git log -S "ZabbixApi::Proxies"
+	commit 6d4b46f38a70eaddfb2c3f1557eb00d9005f3cf9
+	Author: Jon Beilke <jrbeilke@gmail.com>
+	Date:   Wed Apr 19 15:03:47 2017 -0500
+
+	    document all the things!
+
+4. commit 3b128fa1c6b96c9be4aed5b2bcf777537d752c5e
+   https://github.com/express42/zabbixapi/commit/3b128fa1c6b96c9be4aed5b2bcf777537d752c5e
+
+	[temox@git zabbixapi]$ git log --all --grep="Add Ruby 2.2 support"
+	commit 3b128fa1c6b96c9be4aed5b2bcf777537d752c5e
+	Author: Ivan Evtukhovich <evtuhovich@gmail.com>
+	Date:   Mon Dec 29 12:08:52 2014 +0300
+	
+	    Add Ruby 2.2 support
